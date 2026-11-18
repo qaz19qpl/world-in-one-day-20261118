@@ -322,6 +322,6 @@ drawTextCentered(965, "TRUMP MEETS MARCOS   |   MYANMAR TO REVIEW ASEAN TIES", 2
 const outDir = process.env.MAKEFUN_OUTPUT_DIR || "out";
 fs.mkdirSync(outDir, { recursive: true });
 const png = encodePNG(fb, W, H);
-const outPath = path.join(outDir, "poster.png");
+const outPath = path.join(outDir, "entry.png");
 fs.writeFileSync(outPath, png);
 console.log(`wrote ${outPath} (${png.length} bytes, ${W}x${H})`);
